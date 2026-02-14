@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحميل مشروع مصنع الشلوي للذهب</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #fff;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            text-align: center;
+            color: #D4AF37;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            text-align: center;
+            color: #aaa;
+            margin-bottom: 40px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #D4AF37 0%, #B8941F 100%);
+            color: #1a1a1a;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1em;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin: 10px;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
+        }
+        .btn-primary { 
+            background: linear-gradient(135deg, #D4AF37 0%, #B8941F 100%);
+            font-size: 1.3em;
+            padding: 20px 50px;
+        }
+        .btn-secondary {
+            background: linear-gradient(135deg, #555 0%, #333 100%);
+            color: #fff;
+        }
+        .actions {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .info-box {
+            background: rgba(212, 175, 55, 0.1);
+            border: 2px solid #D4AF37;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .file-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .file-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #D4AF37;
+        }
+        .file-name {
+            font-weight: bold;
+            color: #D4AF37;
+            margin-bottom: 5px;
+        }
+        .file-path {
+            font-size: 0.85em;
+            color: #888;
+        }
+        .step {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            border-left: 4px solid #D4AF37;
+        }
+        .step-number {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: #D4AF37;
+            color: #1a1a1a;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        code {
+            background: #000;
+            padding: 2px 8px;
+            border-radius: 4px;
+            color: #D4AF37;
+            font-family: 'Courier New', monospace;
+        }
+        .success {
+            color: #10B981;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏆 مصنع الشلوي للذهب</h1>
+        <p class="subtitle">Al-Shalawi Gold Factory - Complete Project Download</p>
+
+        <div class="info-box">
+            <h3 style="color: #D4AF37; margin-bottom: 15px;">📦 ما ستحصل عليه:</h3>
+            <div class="file-list">
+                <div class="file-item">
+                    <div class="file-name">✅ قاعدة البيانات</div>
+                    <div class="file-path">9 جداول + Triggers + Views</div>
+                </div>
+                <div class="file-item">
+                    <div class="file-name">✅ Backend API</div>
+                    <div class="file-path">Node.js + Express + MySQL</div>
+                </div>
+                <div class="file-item">
+                    <div class="file-name">✅ نظام المنتجات</div>
+                    <div class="file-path">صور + أكواد فريدة</div>
+                </div>
+                <div class="file-item">
+                    <div class="file-name">✅ نظام الطلبات</div>
+                    <div class="file-path">منتجات متعددة + كميات</div>
+                </div>
+                <div class="file-item">
+                    <div class="file-name">✅ Docker</div>
+                    <div class="file-path">نشر سريع</div>
+                </div>
+                <div class="file-item">
+                    <div class="file-name">✅ توثيق كامل</div>
+                    <div class="file-path">5 ملفات شاملة</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button class="btn btn-primary" onclick="downloadAllFiles()">
+                📥 تحميل جميع الملفات (ZIP)
+            </button>
+            <button class="btn btn-secondary" onclick="showInstructions()">
+                📖 عرض التعليمات
+            </button>
+        </div>
+
+        <div id="instructions" style="display: none;">
+            <h2 style="color: #D4AF37; margin: 30px 0 20px;">🚀 طريقة الاستخدام</h2>
+
+            <div class="step">
+                <span class="step-number">1</span>
+                <strong>استخراج الملفات</strong>
+                <p>بعد التحميل، فك ضغط ملف ZIP في المكان المناسب</p>
+                <code>unzip alshalawi-gold-factory.zip</code>
+            </div>
+
+            <div class="step">
+                <span class="step-number">2</span>
+                <strong>إعداد قاعدة البيانات</strong>
+                <p>استيراد ملف SQL إلى MySQL</p>
+                <code>mysql -u root -p < database/schema.sql</code>
+            </div>
+
+            <div class="step">
+                <span class="step-number">3</span>
+                <strong>تثبيت المكتبات</strong>
+                <p>تثبيت dependencies للـ Backend</p>
+                <code>cd backend && npm install</code>
+            </div>
+
+            <div class="step">
+                <span class="step-number">4</span>
+                <strong>إعداد البيئة</strong>
+                <p>نسخ وتعديل ملف .env</p>
+                <code>cp .env.example .env && nano .env</code>
+            </div>
+
+            <div class="step">
+                <span class="step-number">5</span>
+                <strong>تشغيل المشروع</strong>
+                <p class="success">✅ جاهز للعمل!</p>
+                <code>npm start</code>
+            </div>
+        </div>
+
+        <div class="info-box" style="margin-top: 40px;">
+            <h3 style="color: #D4AF37; margin-bottom: 15px;">⚡ البديل السريع: استخدم هذا الأمر</h3>
+            <p style="margin-bottom: 15px;">انسخ والصق هذا الأمر في Terminal:</p>
+            <textarea id="quickCommand" readonly style="width: 100%; background: #000; color: #0f0; padding: 15px; border-radius: 8px; font-family: monospace; min-height: 150px; border: 2px solid #D4AF37;">
+# إنشاء المشروع تلقائياً
+mkdir alshalawi-gold-factory && cd alshalawi-gold-factory
+mkdir -p backend/{config,routes,middleware,utils,uploads/{products,thumbnails,temp},logs}
+mkdir -p frontend database docs
+
+# إنشاء ملفات .gitkeep
+touch backend/uploads/{products,thumbnails,temp}/.gitkeep
+touch backend/logs/.gitkeep
+
+echo "✅ هيكل المشروع جاهز!"
+echo "📝 الآن انسخ محتوى الـ artifacts من Claude إلى الملفات"
+            </textarea>
+            <button class="btn btn-secondary" onclick="copyCommand()">📋 نسخ الأمر</button>
+        </div>
+
+        <div style="margin-top: 40px; text-align: center;">
+            <h3 style="color: #D4AF37; margin-bottom: 20px;">📧 هل تريد المساعدة؟</h3>
+            <p style="margin-bottom: 20px;">يمكنني مساعدتك في:</p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <button class="btn btn-secondary" onclick="alert('قم بنسخ كل artifact من Claude والصقه في الملف المناسب')">
+                    💡 شرح النسخ اليدوي
+                </button>
+                <button class="btn btn-secondary" onclick="alert('راجع ملف INSTALLATION.md للتعليمات الكاملة')">
+                    📖 دليل التثبيت
+                </button>
+                <button class="btn btn-secondary" onclick="showContact()">
+                    📞 تواصل معنا
+                </button>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 Al-Shalawi Gold Factory | مصنع الشلوي للذهب</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">جميع الحقوق محفوظة</p>
+        </footer>
+    </div>
+
+    <script>
+        function downloadAllFiles() {
+            alert('⚠️ للأسف، لا يمكن إنشاء ZIP مباشرة من هنا.\n\n✅ لكن يمكنك:\n\n1️⃣ نسخ كل artifact من Claude يدوياً\n2️⃣ استخدام الأمر السريع أدناه\n3️⃣ اتباع التعليمات المفصلة\n\n💡 انزل للأسفل لرؤية الأمر السريع!');
+            showInstructions();
+        }
+
+        function showInstructions() {
+            document.getElementById('instructions').style.display = 'block';
+            document.getElementById('instructions').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function copyCommand() {
+            const command = document.getElementById('quickCommand');
+            command.select();
+            document.execCommand('copy');
+            alert('✅ تم النسخ! الصق الأمر في Terminal');
+        }
+
+        function showContact() {
+            alert('📧 للحصول على المشروع كاملاً:\n\n1. أخبر Claude بإيميلك\n2. أو استخدم GitHub\n3. أو انسخ الملفات يدوياً\n\n💡 الطريقة اليدوية سهلة وسريعة!');
+        }
+
+        // Auto show instructions after 3 seconds
+        setTimeout(() => {
+            document.getElementById('instructions').style.display = 'block';
+        }, 3000);
+    </script>
+</body>
+</html>
